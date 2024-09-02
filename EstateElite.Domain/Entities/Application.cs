@@ -9,11 +9,11 @@ namespace EstateElite.Domain.Entities
 {
 	public  class Application : BaseEntity
 	{
-		public Guid UnitId { get; set; } // Foreign Key to Unit
-		public Guid ApplicantId { get; set; } // Foreign Key to User
+		public Guid UnitId { get; set; } 
+		public Guid ApplicantId { get; set; } 
 		public User Applicant { get; set; }
 		public DateTime ApplicationDate { get; set; }
-		public ApplicationStatus ApplicationStatus { get; set; } // Pending, Approved, Rejected
+		public ApplicationStatus ApplicationStatus { get; set; }
 		public string Comments { get; set; }
 	}
 }

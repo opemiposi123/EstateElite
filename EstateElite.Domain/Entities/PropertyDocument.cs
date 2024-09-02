@@ -11,10 +11,9 @@ namespace EstateElite.Domain.Entities
 	{
 		public string DocumentName { get; set; }
 		public byte[] DocumentContent { get; set; }
-		public Guid OwnerId { get; set; } // Foreign Key to User
+		public Guid OwnerId { get; set; } 
 		public DateTime DateUploaded { get; set; }
 
-		// Navigation properties
 		public User Owner { get; set; }
 	}
 }

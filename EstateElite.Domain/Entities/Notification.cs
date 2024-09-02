@@ -9,11 +9,11 @@ namespace EstateElite.Domain.Entities
 {
 	public class Notification : BaseEntity
 	{
-		public Guid UserId { get; set; } // Foreign Key to User
+		public Guid UserId { get; set; } 
 		public string Message { get; set; }
-		public NotificationType NotificationType { get; set; } // Email, SMS
+		public NotificationType NotificationType { get; set; } 
 		public DateTime DateSent { get; set; }
-		public string Status { get; set; } // Sent, Pending
+		public string Status { get; set; }
 		public User User { get; set; }
 	}
 }

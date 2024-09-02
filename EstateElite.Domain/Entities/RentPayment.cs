@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EstateElite.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,11 @@ namespace EstateElite.Domain.Entities
 {
 	public class RentPayment : BaseEntity
 	{
-		public int PaymentID { get; set; }
-		public int LeaseID { get; set; } // Foreign Key to Lease
+		public Guid PaymentId { get; set; }
+		public Guid LeaseId { get; set; } // Foreign Key to Lease
 		public DateTime PaymentDate { get; set; }
 		public decimal Amount { get; set; }
-		public string PaymentMethod { get; set; } // CreditCard, BankTransfer, Cash
-		public string Status { get; set; } // Pending, Completed, Failed
-
+		public PaymentMethod PaymentMethod { get; set; } 
+		public GeneralStatus Status { get; set; } 
 	}
 }

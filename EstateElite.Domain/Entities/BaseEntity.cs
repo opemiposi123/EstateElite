@@ -1,4 +1,6 @@
-﻿namespace EstateElite.Domain.Entities
+﻿using EstateElite.Persistence.Implementation.Repository;
+
+namespace EstateElite.Domain.Entities
 {
 	public class BaseEntity : IAuditBase, ISoftDeletable
 	{

@@ -2,7 +2,7 @@
 {
 	public class Property : BaseEntity
 	{
-		public Guid OwnerId { get; set; } // Foreign Key to User
+		public Guid OwnerId { get; set; } 
 		public string Name { get; set; }
 		public string Address { get; set; }
 		public string City { get; set; }

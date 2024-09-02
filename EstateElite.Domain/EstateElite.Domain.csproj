@@ -20,4 +20,8 @@
 		</PackageReference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\EstateElite.Persistence\EstateElite.Persistence.csproj" />
+	</ItemGroup>
+
 </Project>

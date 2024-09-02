@@ -9,14 +9,14 @@ namespace EstateElite.Domain.Entities
 {
 	public class Unit : BaseEntity
 	{
-		public Guid PropertyId { get; set; } // Foreign Key to Property
+		public Guid PropertyId { get; set; } 
 		public string UnitNumber { get; set; }
 		public string Floor { get; set; }
 		public int NumberOfBedrooms { get; set; }
 		public int NumberOfBathrooms { get; set; }
 		public double SquareFeet { get; set; }
 		public decimal RentAmount { get; set; }
-		public UnitStatus Status { get; set; } // Available, Occupied, UnderMaintenance
+		public UnitStatus Status { get; set; } 
 		public DateTime DateAvailable { get; set; }
 	}
 }
